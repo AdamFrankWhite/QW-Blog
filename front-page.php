@@ -13,7 +13,7 @@
 
                     <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
 
-                    <?php the_excerpt(400); ?>
+                    <?php the_excerpt(); ?>
                 </div>
 
             </div>
