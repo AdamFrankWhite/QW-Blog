@@ -4,4 +4,23 @@
             src="<?php bloginfo("template_url");?>/images/COVER-thedefinitiveguide.jpg" alt="book" /></a>
     <h2>This is sidebar</h2>
     <?php wp_nav_menu( array( 'theme_location' => 'side-menu' ) );?>
+    <h3>Recent Posts</h3>
+    <?php 
+            $args = array ( 'posts_per_page' => 5);
+            $myposts = get_posts( $args );
+            foreach( $myposts as $post ) :	setup_postdata($post);
+        ?>
+
+    <ul>
+        <a href="<?php the_permalink();?>"></a>
+
+
+        <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+
+
+
+    </ul>
+    <?php endforeach; 
+        
+        ?>
 </div>

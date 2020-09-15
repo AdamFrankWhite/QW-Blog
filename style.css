@@ -59,7 +59,7 @@ header .nav-cont nav a:hover {
   transition: 0.2s;
 }
 
-.post-cont {
+#post-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1em;
@@ -107,6 +107,16 @@ header .nav-cont nav a:hover {
   width: 65%;
   height: auto;
   padding: 1em;
+}
+
+#left,
+#right {
+  font-size: 2em;
+}
+#left:hover,
+#right:hover {
+  color: blue;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

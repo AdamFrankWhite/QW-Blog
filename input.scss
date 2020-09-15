@@ -60,7 +60,7 @@ header {
         }
     }
 }
-.post-cont {
+#post-cont {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
@@ -107,5 +107,14 @@ header {
         width: 65%;
         height: auto;
         padding: 1em;
+    }
+}
+
+#left,
+#right {
+    font-size: 2em;
+    &:hover {
+        color: blue;
+        cursor: pointer;
     }
 }

@@ -24,6 +24,17 @@ function register_my_menus() {
 	   )
 	 );
    }
-   add_action( 'init', 'register_my_menus' );
+add_action( 'init', 'register_my_menus' );
 
+
+function pagination_script() {
+    wp_enqueue_script( 'pagination', get_template_directory_uri() . '/js/pagination.js', array( 'jquery' ), null );
+}
+add_action( 'wp_enqueue_scripts', 'pagination_script' );
+
+add_action('get_header', 'my_filter_head');
+
+function my_filter_head() {
+   remove_action('wp_head', '_admin_bar_bump_cb');
+} 
 ?>
