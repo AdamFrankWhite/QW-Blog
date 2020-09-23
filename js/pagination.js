@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     $.ajax({
-        url: "http://localhost/qw-blog/wp-json/wp/v2/posts?_embed",
+        url: "http://localhost/qw-blog/wp-json/wp/v2/posts?_embed=1",
         type: "get",
         success: function(data) {
             const posts = data;
@@ -11,7 +11,8 @@ jQuery(document).ready(function($) {
                 return {
                     name: post.title.rendered,
                     img_url: post.better_featured_image.source_url,
-                    link: post.link
+                    link: post.link,
+                    category: post._embedded["wp:term"][0][0].name
                 };
             });
             console.log(postData);
@@ -26,7 +27,9 @@ jQuery(document).ready(function($) {
                     <div class="post-card"> 
                         <div class="card-content">
                             <a href=""><img src="${post.img_url}" alt=${post.name}/></a>
+                            <h4>${post.category}</h4>
                             <h4>${post.name}</h4>
+                            
                         </div>
                     </div>
                 
