@@ -1,5 +1,6 @@
 <div class="blog-sidebar">
-
+    <h3>Get the Book</h3>
+    <hr>
     <a href="http://getbook.at/quittingweedebook"><img
             src="<?php bloginfo("template_url");?>/images/COVER-thedefinitiveguide.jpg" alt="book" /></a>
 

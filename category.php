@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="wrapper">
     <div class="main-cont">
-
+        <?php the_category();?>
 
 
 

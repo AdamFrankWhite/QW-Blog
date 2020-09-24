@@ -7,7 +7,7 @@
     <meta name="description"
         content="Struggling to quit marijuana? Matthew Clarke's book is the definitive guide for overcoming cannabis addiction." />
     <meta name="msvalidate.01" content="403CA369C6F2EA8128B348290A787028" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7COpen+Sans%7CRoboto+Slab%7CMerriweather"
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7COpen+Sans+Pro%7CRoboto+Condensed%7CMerriweather"
         rel="stylesheet" />
     <script src="https://use.fontawesome.com/29ca1d87cd.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./icons/favicon.ico" />

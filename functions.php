@@ -13,7 +13,7 @@ function theme_styles()
 add_action('wp_enqueue_scripts', 'theme_styles');
 
 function excerpt_length( $length ) {
-  return 65;
+  return 35;
 }
 add_filter( 'excerpt_length', 'excerpt_length', 999 );
 

@@ -12,7 +12,8 @@ jQuery(document).ready(function($) {
                     name: post.title.rendered,
                     img_url: post.better_featured_image.source_url,
                     link: post.link,
-                    category: post._embedded["wp:term"][0][0].name
+                    category: post._embedded["wp:term"][0][0].name,
+                    excerpt: post.excerpt.rendered
                 };
             });
             console.log(postData);
@@ -26,10 +27,14 @@ jQuery(document).ready(function($) {
                 
                     <div class="post-card"> 
                         <div class="card-content">
-                            <a href=""><img src="${post.img_url}" alt=${post.name}/></a>
-                            <h4>${post.category}</h4>
-                            <h4>${post.name}</h4>
-                            
+                            <a href="${post.link}"><img src="${
+                        post.img_url
+                    }" alt=${post.name}/></a>
+                            <a class="post-cat" href="/qw-blog/category/${post.category.toLowerCase()}"><h4>${
+                        post.category
+                    }</h4></a>
+                            <a href="${post.link}"><h4>${post.name}</h4></a>
+                            ${post.excerpt}
                         </div>
                     </div>
                 
