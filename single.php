@@ -13,8 +13,15 @@ get_header(); ?>
 
 
 
-            <?php the_content(); ?>
+            <div class="single-post-content"><?php the_content(); ?></div>
+            <div class="post-links">
+                <div class="prev"><?php previous_post_link();?></div>
+                <div class="next"><?php next_post_link();?></div>
+
+
+            </div>
         </div>
+
 
     </div>
 
