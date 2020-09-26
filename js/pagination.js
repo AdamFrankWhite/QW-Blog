@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     $.ajax({
-        url: "http://localhost/qw-blog/wp-json/wp/v2/posts?_embed=1",
+        url: "http://quittingweedthebook.com/blog/wp-json/wp/v2/posts?_embed=1",
         type: "get",
         success: function(data) {
             const posts = data;
