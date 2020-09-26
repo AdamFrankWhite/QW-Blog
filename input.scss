@@ -48,7 +48,7 @@ header {
             color: #138293;
             padding-left: 2px;
             @media (max-width: 700px) {
-                font-size: 0.8em;
+                font-size: 1.25em;
             }
         }
         nav {
@@ -136,6 +136,11 @@ header {
             text-decoration: none;
             line-height: 1.5em;
             letter-spacing: 0.02em;
+            &:hover {
+                color: orange !important;
+                transition: 0.2s color;
+            }
+            // line-height: 1.1em;
         }
         .post-cat {
             font-family: "Source Sans Pro";
@@ -143,6 +148,11 @@ header {
             font-size: 0.9em;
             text-transform: uppercase;
             font-weight: 200 !important;
+        }
+
+        a.moretag {
+            font-size: 1em;
+            color: navy;
         }
     }
 }
@@ -215,8 +225,9 @@ header {
         flex-direction: column;
     }
     .main-cont {
-        flex: 65%;
+        flex: 70%;
         position: relative;
+        padding-bottom: 5em;
     }
     .cat-post-cont {
         padding: 0 5%;
@@ -247,13 +258,16 @@ header {
             width: 60%;
         }
         width: 50%;
+        margin-left: 1%;
+
+        height: auto;
+        padding: 1em 1em 0 1em;
+        display: block;
+    }
+    img[alt="book"] {
         @media (min-width: 700px) {
             min-width: 270px;
         }
-
-        height: auto;
-        padding: 2em 2em 0 2em;
-        display: block;
     }
     h3 {
         padding-top: 0.5em;
@@ -299,16 +313,15 @@ img.amazon-btn {
     margin: auto;
     width: 45%;
     height: auto;
-    @media (min-width: 700px) {
-        width: 40%;
-        height: auto;
-        padding: 1em;
-        margin-left: 11%;
-        text-decoration: none;
-        &:hover {
-            background-size: 4px 70px;
-            text-decoration: underline;
-        }
+    padding: 1em;
+    @media (min-width: 1050px) {
+        margin-left: 10%;
+    }
+
+    text-decoration: none;
+    &:hover {
+        background-size: 4px 70px;
+        text-decoration: underline;
     }
 }
 
@@ -348,6 +361,9 @@ img.amazon-btn {
     position: absolute;
     font-size: 2em;
     bottom: 1em;
+    @media (min-width: 1400px) {
+        bottom: 2em;
+    }
     &:hover {
         color: blue;
         cursor: pointer;

@@ -48,7 +48,7 @@ header .nav-cont > a {
 }
 @media (max-width: 700px) {
   header .nav-cont > a {
-    font-size: 0.8em;
+    font-size: 1.25em;
   }
 }
 header .nav-cont nav {
@@ -140,12 +140,20 @@ header .nav-cont nav a:hover {
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
+.post-card .card-content a:hover {
+  color: orange !important;
+  transition: 0.2s color;
+}
 .post-card .card-content .post-cat {
   font-family: "Source Sans Pro";
   color: red;
   font-size: 0.9em;
   text-transform: uppercase;
   font-weight: 200 !important;
+}
+.post-card .card-content a.moretag {
+  font-size: 1em;
+  color: navy;
 }
 
 .cat-post-card {
@@ -223,8 +231,9 @@ header .nav-cont nav a:hover {
   }
 }
 .wrapper .main-cont {
-  flex: 65%;
+  flex: 70%;
   position: relative;
+  padding-bottom: 5em;
 }
 .wrapper .cat-post-cont {
   padding: 0 5%;
@@ -254,8 +263,9 @@ header .nav-cont nav a:hover {
 }
 .blog-sidebar img {
   width: 50%;
+  margin-left: 1%;
   height: auto;
-  padding: 2em 2em 0 2em;
+  padding: 1em 1em 0 1em;
   display: block;
 }
 @media (max-width: 699px) {
@@ -265,7 +275,7 @@ header .nav-cont nav a:hover {
   }
 }
 @media (min-width: 700px) {
-  .blog-sidebar img {
+  .blog-sidebar img[alt=book] {
     min-width: 270px;
   }
 }
@@ -316,19 +326,17 @@ img.amazon-btn {
   margin: auto;
   width: 45%;
   height: auto;
+  padding: 1em;
+  text-decoration: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 1050px) {
   img.amazon-btn {
-    width: 40%;
-    height: auto;
-    padding: 1em;
-    margin-left: 11%;
-    text-decoration: none;
+    margin-left: 10%;
   }
-  img.amazon-btn:hover {
-    background-size: 4px 70px;
-    text-decoration: underline;
-  }
+}
+img.amazon-btn:hover {
+  background-size: 4px 70px;
+  text-decoration: underline;
 }
 
 .single-post {
@@ -368,6 +376,12 @@ img.amazon-btn {
   position: absolute;
   font-size: 2em;
   bottom: 1em;
+}
+@media (min-width: 1400px) {
+  #left,
+#right {
+    bottom: 2em;
+  }
 }
 #left:hover,
 #right:hover {
