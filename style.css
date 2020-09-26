@@ -140,7 +140,7 @@ header .nav-cont nav a:hover {
   line-height: 1.5em;
   letter-spacing: 0.02em;
 }
-.post-card .card-content a:hover {
+.post-card .card-content a:not(.post-cat):hover {
   color: orange !important;
   transition: 0.2s color;
 }
@@ -329,9 +329,14 @@ img.amazon-btn {
   padding: 1em;
   text-decoration: none;
 }
-@media (min-width: 1050px) {
+@media (min-width: 700px) and (max-width: 1350px) {
   img.amazon-btn {
-    margin-left: 10%;
+    width: 55%;
+  }
+}
+@media (min-width: 1200px) {
+  img.amazon-btn {
+    margin-left: 12%;
   }
 }
 img.amazon-btn:hover {

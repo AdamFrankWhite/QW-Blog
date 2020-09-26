@@ -136,7 +136,7 @@ header {
             text-decoration: none;
             line-height: 1.5em;
             letter-spacing: 0.02em;
-            &:hover {
+            &:not(.post-cat):hover {
                 color: orange !important;
                 transition: 0.2s color;
             }
@@ -314,8 +314,11 @@ img.amazon-btn {
     width: 45%;
     height: auto;
     padding: 1em;
-    @media (min-width: 1050px) {
-        margin-left: 10%;
+    @media (min-width: 700px) and (max-width: 1350px) {
+        width: 55%;
+    }
+    @media (min-width: 1200px) {
+        margin-left: 12%;
     }
 
     text-decoration: none;
