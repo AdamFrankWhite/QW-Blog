@@ -1,14 +1,19 @@
 <div class="blog-sidebar">
     <h3>Get the Book</h3>
     <hr>
+
     <a href="http://getbook.at/quittingweedebook"><img
             src="<?php bloginfo("template_url");?>/images/COVER-thedefinitiveguide.jpg" alt="book" /></a>
+    <a href="http://getbook.at/quittingweedebook">
+        <img class="amazon-btn" src="https://www.niftybuttons.com/amazon/amazon-button3.png"
+            style="padding-left: 0.3em; padding-right: 0.3em;" alt="buy button">
+    </a>
 
     <div class="sidebar-widget">
         <h3>Categories</h3>
         <?php wp_nav_menu( array( 'theme_location' => 'side-menu' ) );?>
     </div>
-    <div class="sidebar-widget">
+    <div class="sidebar-widget l-p">
         <h3>Latest Posts</h3>
         <?php 
             $args = array ( 'posts_per_page' => 5);

@@ -130,6 +130,23 @@ header .nav-cont nav a:hover {
   font-size: 1.5em;
   text-decoration: none;
   padding-bottom: 0.5em;
+  line-height: 1.1em;
+}
+.cat-post-card .card-content a:nth-of-type(1):hover {
+  color: orange;
+  transition: 0.2s color;
+}
+.cat-post-card .card-content a {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+}
+.cat-post-card .card-content a.moretag {
+  font-size: 1em;
+  color: navy;
 }
 
 .wrapper {
@@ -137,6 +154,7 @@ header .nav-cont nav a:hover {
   margin-top: 2em;
   padding-bottom: 2em;
   justify-content: center;
+  font-family: "Roboto Condensed";
 }
 .wrapper .main-cont {
   flex: 65%;
@@ -154,26 +172,53 @@ header .nav-cont nav a:hover {
 }
 .wrapper .blog-sidebar {
   flex: 30%;
+  padding-right: 1.5em;
 }
 
 .blog-sidebar img {
   width: 50%;
   height: auto;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
+  display: block;
+}
+.blog-sidebar h3 {
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+  text-transform: uppercase;
 }
 .blog-sidebar hr {
   width: 50%;
-  border-top: black 2px solid;
 }
 
 .sidebar-widget {
-  padding: 1em;
+  padding-top: 1.5em;
 }
 .sidebar-widget a {
   text-decoration: none;
+  font-size: 1.25em;
+  color: #14148f !important;
+}
+.sidebar-widget a:hover {
+  color: orange !important;
 }
 .sidebar-widget ul {
-  padding: 0.15em 0;
+  padding: 0.25em 1.25em;
+  line-height: 1.1em;
+}
+.sidebar-widget li {
+  padding-bottom: 0.25em;
+}
+
+img.amazon-btn {
+  width: 40%;
+  height: auto;
+  padding: 1em;
+  margin-left: 11%;
+  text-decoration: none;
+}
+img.amazon-btn:hover {
+  background-size: 4px 70px;
+  text-decoration: underline;
 }
 
 .single-post {
@@ -186,7 +231,7 @@ header .nav-cont nav a:hover {
   display: block;
   width: 85%;
   height: auto;
-  margin: 1em auto;
+  margin: 1.5em auto;
 }
 .single-post .post-links {
   display: flex;

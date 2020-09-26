@@ -13,9 +13,15 @@ function theme_styles()
 add_action('wp_enqueue_scripts', 'theme_styles');
 
 function excerpt_length( $length ) {
-  return 35;
+  return (is_front_page()) ? 35 : 60;
 }
 add_filter( 'excerpt_length', 'excerpt_length', 999 );
+
+function new_excerpt_more($more) {
+	global $post;
+ return '<a class="moretag" href="'. get_permalink($post->ID) . '">...read more</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 function register_my_menus() {
 	register_nav_menus(
