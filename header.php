@@ -22,6 +22,7 @@
     <header>
         <div class="nav-cont">
             <a>Quitting Weed: The Complete Guide</a>
+            <a id="toggle-nav" href="#">menu</a>
             <nav>
                 <a class="nav-item nav-link" href="http://quittingweedthebook.com/#features">Features</a>
                 <a class="nav-item nav-link" href="http://quittingweedthebook.com/#testimonials">Reviews</a>

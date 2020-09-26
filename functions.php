@@ -1,5 +1,12 @@
 <?php 
 add_theme_support( 'post-thumbnails' );
+
+function burger_menu_script() {
+     
+    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ), null );
+  
+}
+add_action('wp_enqueue_scripts', "burger_menu_script");
 function theme_styles()  
 { 
 
