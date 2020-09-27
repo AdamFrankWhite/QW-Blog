@@ -4,9 +4,7 @@ jQuery(document).ready(function($) {
         type: "get",
         success: function(data) {
             const posts = data;
-            console.log(posts);
             const cardContainer = document.getElementById("post-cont");
-
             const postData = posts.map(post => {
                 return {
                     name: post.title.rendered,
@@ -16,7 +14,6 @@ jQuery(document).ready(function($) {
                     excerpt: post.excerpt.rendered
                 };
             });
-            console.log(postData);
 
             function getPosts(start = 0, end = 4) {
                 let galleryHTML = "";
@@ -30,7 +27,7 @@ jQuery(document).ready(function($) {
                             <a href="${post.link}"><img src="${
                         post.img_url
                     }" alt=${post.name}/></a>
-                            <a class="post-cat" href="/qw-blog/category/${post.category.toLowerCase()}"><h4>${
+                            <a class="post-cat" href="/category/${post.category.toLowerCase()}"><h4>${
                         post.category
                     }</h4></a>
                             <a href="${post.link}"><h4>${post.name}</h4></a>

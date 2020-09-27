@@ -24,11 +24,10 @@ body {
 }
 
 header {
-    // height: 52px;
     padding: 0.9em;
     padding-bottom: 0.8em;
     display: flex;
-
+    height: fit-content;
     align-items: center;
     .nav-cont {
         width: 95%;
@@ -354,8 +353,10 @@ img.amazon-btn {
 .single-post-content {
     padding: 1em 2em;
     text-align: justify;
+    font-size: 1.25em;
     p {
         padding-bottom: 1em;
+        font-size: 1.25em;
     }
 }
 

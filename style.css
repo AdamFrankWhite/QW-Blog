@@ -25,6 +25,7 @@ header {
   padding: 0.9em;
   padding-bottom: 0.8em;
   display: flex;
+  height: fit-content;
   align-items: center;
 }
 header .nav-cont {
@@ -371,9 +372,11 @@ img.amazon-btn:hover {
 .single-post-content {
   padding: 1em 2em;
   text-align: justify;
+  font-size: 1.25em;
 }
 .single-post-content p {
   padding-bottom: 1em;
+  font-size: 1.25em;
 }
 
 #left,
