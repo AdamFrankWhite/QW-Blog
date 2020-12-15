@@ -4,6 +4,10 @@
 
     <a href="http://getbook.at/quittingweedebook"><img
             src="<?php bloginfo("template_url");?>/images/COVER-thedefinitiveguide.jpg" alt="book" /></a>
+    <div class="stars">
+        <img src="<?php bloginfo("template_url");?>/images/stars-trans.png" alt="stars" />
+        <p>102 Reviews Average: 4.3/5</p>
+    </div>
     <a href="http://getbook.at/quittingweedebook">
         <img class="amazon-btn" src="https://www.niftybuttons.com/amazon/amazon-button3.png"
             style="padding-left: 0.3em; padding-right: 0.3em;" alt="buy button">

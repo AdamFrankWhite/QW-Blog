@@ -21,14 +21,18 @@
 <body>
     <header>
         <div class="nav-cont">
-            <a>Quitting Weed: The Complete Guide</a>
+            <div>
+                <img src="<?php bloginfo("template_url");?>/images/cann-leaf.png" alt="icon" />
+                <a href="https://quittingweedthebook.com">Quitting Weed: The Complete Guide</a>
+            </div>
             <a id="toggle-nav" href="#">menu</a>
             <nav>
-                <a class="nav-item nav-link" href="http://quittingweedthebook.com/#features">Features</a>
-                <a class="nav-item nav-link" href="http://quittingweedthebook.com/#testimonials">Reviews</a>
-                <a class="nav-item nav-link" href="http://quittingweedthebook.com/#chapters">Chapters</a>
-                <a class="nav-item nav-link" href="http://quittingweedthebook.com/#samples">Samples</a>
-                <a class="nav-item nav-link" href="http://quittingweedthebook.com/blog">Blog</a>
+                <a class="nav-item nav-link" href="https://quittingweedthebook.com/#testimonials">Reviews</a>
+                <a class="nav-item nav-link" href="https://quittingweedthebook.com/#features">Features</a>
+
+                <a class="nav-item nav-link" href="https://quittingweedthebook.com/#chapters">Chapters</a>
+                <a class="nav-item nav-link" href="https://quittingweedthebook.com/#samples">Samples</a>
+                <a class="nav-item nav-link" href="https://quittingweedthebook.com/blog">Blog</a>
                 <a class="nav-item nav-link" href="mailto:matthewclarkebook@gmail.com">Contact</a>
             </nav>
         </div>

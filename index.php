@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 <div class="wrapper">
+    <div id="loading" class="loader"></div>
     <div class="main-cont">
+
         <div class="post-cont">
+
             <?php 
             $args = array ( 'posts_per_page' => 5);
             $myposts = get_posts( $args );

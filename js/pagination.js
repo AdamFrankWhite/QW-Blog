@@ -1,24 +1,24 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     $.ajax({
         url: "http://quittingweedthebook.com/blog/wp-json/wp/v2/posts?_embed=1",
         type: "get",
-        success: function(data) {
+        success: function (data) {
             const posts = data;
             const cardContainer = document.getElementById("post-cont");
-            const postData = posts.map(post => {
+            const postData = posts.map((post) => {
                 return {
                     name: post.title.rendered,
                     img_url: post.better_featured_image.source_url,
                     link: post.link,
                     category: post._embedded["wp:term"][0][0].name,
-                    excerpt: post.excerpt.rendered
+                    excerpt: post.excerpt.rendered,
                 };
             });
 
             function getPosts(start = 0, end = 4) {
                 let galleryHTML = "";
                 let slideView = postData.slice(start, end);
-                slideView.forEach(post => {
+                slideView.forEach((post) => {
                     galleryHTML += `
                 
                 
@@ -80,9 +80,28 @@ jQuery(document).ready(function($) {
             $("#left").on("click", () => slider("left"));
             $("#right").on("click", () => slider("right"));
         },
-        error: function(xhr, ajaxOptions, thrownError) {
+        error: function (xhr, ajaxOptions, thrownError) {
             var errorMsg = "Ajax request failed: " + xhr.responseText;
             jQuery("#content").html(errorMsg);
-        }
+        },
     });
+});
+
+//Loading animation
+function onReady(callback) {
+    var intervalId = window.setInterval(function () {
+        if (document.getElementById("post-cont").childElementCount) {
+            window.clearInterval(intervalId);
+            callback.call(this);
+        }
+    }, 1000);
+}
+
+function setVisible(selector, visible) {
+    document.querySelector(selector).style.display = visible ? "block" : "none";
+}
+
+onReady(function () {
+    setVisible("#loading", true);
+    setVisible("#loading", false);
 });

@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 <div class="wrapper">
+
     <div class="main-cont">
+        <div id="loading">
+            <div class="loader"></div>
+        </div>
         <div id="post-cont">
 
         </div>
