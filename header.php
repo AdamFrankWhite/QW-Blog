@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway%7COpen+Sans+Pro%7CRoboto+Condensed%7CMerriweather"
         rel="stylesheet" />
     <script src="https://use.fontawesome.com/29ca1d87cd.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="./icons/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo("template_url");?>/images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <title>Quitting Weed: The Complete Guide</title>
@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="nav-cont">
-            <div>
+            <div class="nav-title">
                 <img src="<?php bloginfo("template_url");?>/images/cann-leaf.png" alt="icon" />
                 <a href="https://quittingweedthebook.com">Quitting Weed: The Complete Guide</a>
             </div>

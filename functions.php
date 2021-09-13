@@ -1,9 +1,9 @@
 <?php 
 add_theme_support( 'post-thumbnails' );
-
+$rand = rand(1, 999999999);
 function burger_menu_script() {
      
-    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ), null );
+    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ), $rand,null );
   
 }
 add_action('wp_enqueue_scripts', "burger_menu_script");
@@ -12,7 +12,7 @@ function theme_styles()
 
 
 	// Load all of the styles that need to appear on all pages
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css', array(), $rand, 'all' );
 
 
 
